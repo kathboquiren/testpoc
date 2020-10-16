@@ -1,19 +1,26 @@
 <html>
 <head>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
-
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-automl/dist/tf-automl.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
+
 </head>
 <body >
  
-<video autoplay playsinline muted id="webcam" width="224" height="224"> 
-</video>
- 
+
+ <div class="prediction-wrapper">
+    <div class="prediction-mask-wrapper">
+    <video autoplay playsinline muted id="webcam" width="224" height="224"> 
+    </video>
+
 <div id="predictions-mask"></div>
 <div id="predictions-no-mask"></div>
- 
+</div>
+<div class="prediction-buttons">
 <button type="button" id="startPredicting" onclick="startPredicting()"> Start Predicting </button>
 <button type="button" id="stopPredicting" onclick="stopPredicting()" >Stop Predicting</button>
+</div>
+</div>
 <script src= "index.js"></script>
 </body>
 </html>

@@ -1,0 +1,30 @@
+body{
+    background-image: url('./img/bg1.jpg');
+    display: flex;
+}
+.prediction-wrapper{
+    background-image: url('./img/bg.jpg');
+    height: 600px;
+    margin: auto;
+    width: 800px;
+    
+}
+.prediction-mask-wrapper{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.prediction-buttons{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 0px 10px;
+    padding: 20px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 5px;
+}
